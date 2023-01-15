@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-
+import Error from './components/Error';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
@@ -18,7 +18,7 @@ const App = () => {
   <Route  path="/contact" element={<Contact />}/>
   <Route  path="/login" element={<Login />}/>
   <Route  path="/signup" element={<Signup />}/>
-
+  <Route  element={<Error/>}/>
 </Routes>
 </Router>
    </>
